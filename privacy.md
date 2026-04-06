@@ -1,10 +1,11 @@
 # Privacy Policy for Filaya
-**Last Updated: March 2026**
+**Last Updated: April 2026**
 
 Filaya Languages ("we," "our," or "us") respects your privacy. This policy explains how we collect and use data when you use the Filaya application.
 
 ### 1. Data We Collect
 * **Account Data:** If you create an account to permanently save your progress, we collect your email address and an encrypted password via Google Firebase Authentication. 
+* **Microphone and Audio Data:** Our application requests access to your device's microphone (`android.permission.RECORD_AUDIO`) strictly to enable the "Speaking Practice" feature. The audio file is saved **locally** on your personal device and is **never** transmitted, uploaded, or shared to our servers or any third-party services.
 * **Analytics Data:** We collect basic, anonymized usage telemetry (e.g., crash reports, lesson completion rates) to improve the app experience. We do not track you across other companies' apps or websites.
 
 ### 2. Third-Party Services
