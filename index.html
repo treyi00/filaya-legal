@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filaya | 100 Lessons to Conversational</title>
+    <title>Filaya: 100-Day Language Learning | Join the Waitlist</title>
     <style>
         :root {
-            --primary-color: #2563eb;
-            --primary-hover: #1d4ed8;
-            --text-main: #1f2937;
-            --text-light: #4b5563;
-            --bg-color: #f8fafc;
+            --primary-color: #7570b2;
+            --secondary-color: #00d084;
+            --dark-bg: #32373c;
+            --light-bg: #e6e5f1;
+            --text-color: #212529;
+            --font-family: 'Poppins', sans-serif;
         }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: var(--text-main);
-            background-color: var(--bg-color);
-            line-height: 1.6;
+            font-family: var(--font-family);
+            color: var(--text-color);
+            background-color: var(--light-bg);
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -46,11 +45,11 @@
             flex-grow: 1;
         }
         h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            letter-spacing: -1px;
-            color: #111827;
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
         .hero p {
             font-size: 1.25rem;
@@ -65,19 +64,20 @@
             margin-bottom: 2rem;
         }
         .cta-button {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 2.5rem;
-            border-radius: 8px;
+            background-color: var(--light-bg);
+            color: var(--primary-color);
+            border-radius: 9999px;
+            padding: 14px 30px;
             font-size: 1.125rem;
             font-weight: 600;
-            text-decoration: none;
-            transition: background-color 0.2s, transform 0.2s;
-            display: inline-block;
+            border: none;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
         }
         .cta-button:hover {
-            background-color: var(--primary-hover);
-            transform: translateY(-2px);
+            background-color: #00b370;
+            color: #fff;
         }
         .status-text {
             font-size: 0.95rem;
@@ -99,21 +99,21 @@
         }
         .feature-card h3 {
             font-size: 1.25rem;
-            color: #111827;
+            color: var(--text-color);
             margin-bottom: 0.75rem;
         }
         footer {
-            background-color: #1f2937;
-            color: white;
-            text-align: center;
-            padding: 2.5rem;
             margin-top: auto;
+            padding: 2rem 0;
+            text-align: center;
+            color: #777;
+            font-size: 0.875rem;
         }
         .footer-links {
             margin-bottom: 1rem;
         }
         .footer-links a {
-            color: #9ca3af;
+            color: var(--text-color);
             text-decoration: none;
             margin: 0 1rem;
             font-size: 0.9rem;
@@ -135,13 +135,13 @@
     </header>
 
     <main class="hero">
-        <h1>Skip the flashcards.<br>Learn for the real world.</h1>
-        <p>This isn't a gamified language app. Designed by a linguist using cognitive memory research, Filaya is built strictly for real-world interactions.</p>
-        <p>Spend less than 40 minutes a day on the app. After 100 days, you will have the framework to confidently speak with locals.</p>
+        <h1>Skip gamification.<br>Leverage cognition to learn a new language quickly.</h1>
+        <p>This isn't a gamified language app that prioritizes engagement at the expense of content depth. Filaya is designed by a linguist to learn a new language quickly.</p>
+        <p>Reach a conversational level after 100 days of less than 40 minutes a day on the app.</p>
         
         <div class="cta-container">
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScywlqfI_IlndCZYv6afH_XbmxJrajBKlsO-nz8uMJ6kep3TQ/viewform" target="_blank" class="cta-button">Join the Waitlist</a>
-            <p class="status-text">Filaya is currently in development.<br>Join the waitlist and you'll be notified the moment the app hits the App Store and Google Play.</p>
+            <p class="status-text">Filaya is currently in development to offer Spanish lessons. Other languages soon to follow.<br>Join the waitlist and you'll be notified the moment the app hits the App Store and Google Play.</p>
         </div>
     </main>
 
@@ -152,11 +152,11 @@
         </div>
         <div class="feature-card">
             <h3>Conversational in 100 Days</h3>
-            <p style="color: var(--text-light);">Follow a strict, day-by-day progression path. In just 100 daily lessons, you will build the grammatical and acoustic foundation to hold real conversations.</p>
+            <p style="color: var(--text-light);">Follow a day-by-day progression path. In just 100 daily lessons, you will build the linguistic foundation to hold real conversations.</p>
         </div>
         <div class="feature-card">
             <h3>Speak With Locals</h3>
-            <p style="color: var(--text-light);">Stop guessing what to study next. Focus purely on the vocabulary, parallel text, and audio training you actually need to navigate life in a foreign country.</p>
+            <p style="color: var(--text-light);">Be able to construct and understand sentences quickly to navigate life in a foreign country.</p>
         </div>
     </section>
 
