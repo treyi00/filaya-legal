@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filaya Languages | Learn Languages</title>
+    <title>Filaya | 100 Lessons to Conversational</title>
     <style>
         :root {
             --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
             --text-main: #1f2937;
-            --text-light: #6b7280;
+            --text-light: #4b5563;
             --bg-color: #f8fafc;
         }
         body {
@@ -25,7 +26,7 @@
         header {
             background-color: white;
             padding: 1.5rem 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -35,60 +36,77 @@
             font-weight: 700;
             color: var(--primary-color);
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
         .hero {
             text-align: center;
-            padding: 5rem 2rem;
+            padding: 5rem 2rem 3rem 2rem;
             max-width: 800px;
             margin: 0 auto;
             flex-grow: 1;
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            line-height: 1.2;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            color: #111827;
         }
         .hero p {
             font-size: 1.25rem;
             color: var(--text-light);
-            margin-bottom: 2.5rem;
+            margin-bottom: 1rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
         }
-        .badges {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
+        .cta-container {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
         }
-        .badge {
-            background-color: #111827;
+        .cta-button {
+            background-color: var(--primary-color);
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 1rem 2.5rem;
             border-radius: 8px;
+            font-size: 1.125rem;
             font-weight: 600;
             text-decoration: none;
-            transition: transform 0.2s;
+            transition: background-color 0.2s, transform 0.2s;
+            display: inline-block;
         }
-        .badge:hover {
+        .cta-button:hover {
+            background-color: var(--primary-hover);
             transform: translateY(-2px);
+        }
+        .status-text {
+            font-size: 0.95rem;
+            color: #6b7280;
+            margin-top: 1rem;
         }
         .features {
             display: flex;
             justify-content: center;
             gap: 2rem;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem;
             background: white;
             flex-wrap: wrap;
         }
         .feature-card {
-            max-width: 300px;
+            max-width: 320px;
             text-align: center;
             padding: 1.5rem;
+        }
+        .feature-card h3 {
+            font-size: 1.25rem;
+            color: #111827;
+            margin-bottom: 0.75rem;
         }
         footer {
             background-color: #1f2937;
             color: white;
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem;
             margin-top: auto;
         }
         .footer-links {
@@ -99,9 +117,14 @@
             text-decoration: none;
             margin: 0 1rem;
             font-size: 0.9rem;
+            transition: color 0.2s;
         }
         .footer-links a:hover {
             color: white;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .hero { padding: 3rem 1.5rem; }
         }
     </style>
 </head>
@@ -112,34 +135,35 @@
     </header>
 
     <main class="hero">
-        <h1>Master a New Language.</h1>
-        <p>Comprehensive, structured courses for Spanish and Tagalog (other languages coming soon). Designed with clear audio, deep grammar insights, and practical daily vocabulary.</p>
+        <h1>Skip the flashcards.<br>Learn for the real world.</h1>
+        <p>This isn't a gamified language app. Designed by a linguist using cognitive memory research, Filaya is built strictly for real-world interactions.</p>
+        <p>Spend less than 40 minutes a day on the app. After 100 days, you will have the framework to confidently speak with locals.</p>
         
-        <div class="badges">
-            <span class="badge">Coming Soon to iOS</span>
-            <span class="badge">Coming Soon to Android</span>
+        <div class="cta-container">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScywlqfI_IlndCZYv6afH_XbmxJrajBKlsO-nz8uMJ6kep3TQ/viewform" target="_blank" class="cta-button">Join the Waitlist</a>
+            <p class="status-text">Filaya is currently in development.<br>Join the waitlist and you'll be notified the moment the app hits the App Store and Google Play.</p>
         </div>
     </main>
 
     <section class="features">
         <div class="feature-card">
-            <h3>Structured Learning</h3>
-            <p style="color: #6b7280;">Stop guessing what to study next. Follow a clear, day-by-day progression path.</p>
+            <h3>Built by a Linguist</h3>
+            <p style="color: var(--text-light);">Rooted in scientific research on language acquisition and memory retention, abandoning addictive game mechanics for functional learning.</p>
         </div>
         <div class="feature-card">
-            <h3>Clear Audio</h3>
-            <p style="color: #6b7280;">Train and familiarize your ear with high-quality pronunciations.</p>
+            <h3>Conversational in 100 Days</h3>
+            <p style="color: var(--text-light);">Follow a strict, day-by-day progression path. In just 100 daily lessons, you will build the grammatical and acoustic foundation to hold real conversations.</p>
         </div>
         <div class="feature-card">
-            <h3>Own Your Progress</h3>
-            <p style="color: #6b7280;">No subscriptions. Unlock the languages you want with simple one-time purchases.</p>
+            <h3>Speak With Locals</h3>
+            <p style="color: var(--text-light);">Stop guessing what to study next. Focus purely on the vocabulary, parallel text, and audio training you actually need to navigate life in a foreign country.</p>
         </div>
     </section>
 
     <footer>
         <div class="footer-links">
-            <a href="/privacy.html">Privacy Policy</a>
-            <a href="/terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
             <a href="mailto:support@filaya.com">Contact Support</a>
         </div>
         <p style="color: #6b7280; font-size: 0.875rem; margin-top: 1rem;">
