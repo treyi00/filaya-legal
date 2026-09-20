@@ -66,19 +66,21 @@
         .cta-button {
             background-color: var(--primary-color);
             color: var(--light-bg);
-            border-radius: 9999px;
+            border-radius: 50px; /* Reduced from 9999px to prevent WebKit shape-clipping bugs */
             padding: 14px 30px;
             font-size: 1.25rem;
             font-weight: 600;
             border: none;
             transition: background-color 0.3s ease;
-            width: 100%;
             margin-top: 1rem;
             
-            /* Add these two lines to fix the mobile cutoff */
-            box-sizing: border-box;
             display: block; 
-            text-decoration: none; /* Ensures the link text has no underline */
+            box-sizing: border-box;
+            max-width: 100%;
+            text-align: center; 
+            text-decoration: none;
+            white-space: nowrap; 
+            -webkit-appearance: none; 
         }
         .cta-button:hover {
             background-color: var(--secondary-color);
