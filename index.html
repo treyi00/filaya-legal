@@ -74,6 +74,11 @@
             transition: background-color 0.3s ease;
             width: 100%;
             margin-top: 1rem;
+            
+            /* Add these two lines to fix the mobile cutoff */
+            box-sizing: border-box;
+            display: block; 
+            text-decoration: none; /* Ensures the link text has no underline */
         }
         .cta-button:hover {
             background-color: var(--secondary-color);
